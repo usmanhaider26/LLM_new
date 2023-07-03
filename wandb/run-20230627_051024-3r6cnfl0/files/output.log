@@ -1,0 +1,26 @@
+
+  0%|                                                                               | 0/1000 [00:00<?, ?it/s]You're using a PreTrainedTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Traceback (most recent call last):
+  File "new_fine_falcon7b.py", line 228, in <module>
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1870, in _inner_training_loop
+    self.optimizer.step()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/optimizer.py", line 134, in step
+    self.scaler.step(self.optimizer, closure)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 372, in step
+    assert len(optimizer_state["found_inf_per_device"]) > 0, "No inf checks were recorded for this optimizer."
+AssertionError: No inf checks were recorded for this optimizer.
+Traceback (most recent call last):
+  File "new_fine_falcon7b.py", line 228, in <module>
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1870, in _inner_training_loop
+    self.optimizer.step()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/optimizer.py", line 134, in step
+    self.scaler.step(self.optimizer, closure)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/cuda/amp/grad_scaler.py", line 372, in step
+    assert len(optimizer_state["found_inf_per_device"]) > 0, "No inf checks were recorded for this optimizer."
+AssertionError: No inf checks were recorded for this optimizer.

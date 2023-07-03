@@ -1,0 +1,161 @@
+
+  0%|                                                                                                                             | 0/1000 [00:00<?, ?it/s]You're using a PreTrainedTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+  0%|                                                                                                                   | 1/1000 [00:10<2:46:52, 10.02s/it]
+{'loss': 4.5751, 'learning_rate': 4.0000000000000003e-07, 'epoch': 0.06}
+
+
+ 71%|█████████████████████████████████████████████████████████████████████████████████████▋                                  | 5/7 [00:04<00:01,  1.12it/s]
+
+{'eval_loss': 4.549474716186523, 'eval_runtime': 6.8152, 'eval_samples_per_second': 7.19, 'eval_steps_per_second': 1.027, 'epoch': 0.06}
+  0%|▏                                                                                                                  | 2/1000 [00:24<3:27:36, 12.48s/it]
+
+
+ 57%|████████████████████████████████████████████████████████████████████▌                                                   | 4/7 [00:03<00:02,  1.17it/s]
+
+{'eval_loss': 4.549492835998535, 'eval_runtime': 6.8806, 'eval_samples_per_second': 7.121, 'eval_steps_per_second': 1.017, 'epoch': 0.12}
+  0%|▎                                                                                                                  | 3/1000 [00:38<3:39:10, 13.19s/it]
+
+
+ 57%|████████████████████████████████████████████████████████████████████▌                                                   | 4/7 [00:03<00:02,  1.16it/s]
+
+{'eval_loss': 4.549201965332031, 'eval_runtime': 6.9309, 'eval_samples_per_second': 7.07, 'eval_steps_per_second': 1.01, 'epoch': 0.17}
+  0%|▍                                                                                                                  | 4/1000 [00:51<3:40:16, 13.27s/it]
+
+
+ 71%|█████████████████████████████████████████████████████████████████████████████████████▋                                  | 5/7 [00:04<00:01,  1.10it/s]
+
+{'eval_loss': 4.548902988433838, 'eval_runtime': 6.9478, 'eval_samples_per_second': 7.053, 'eval_steps_per_second': 1.008, 'epoch': 0.23}
+  0%|▌                                                                                                                  | 5/1000 [01:05<3:45:17, 13.59s/it]
+
+
+ 71%|█████████████████████████████████████████████████████████████████████████████████████▋                                  | 5/7 [00:04<00:01,  1.09it/s]
+
+{'eval_loss': 4.548547267913818, 'eval_runtime': 6.9971, 'eval_samples_per_second': 7.003, 'eval_steps_per_second': 1.0, 'epoch': 0.29}
+
+  1%|▋                                                                                                                  | 6/1000 [01:20<3:50:54, 13.94s/it]
+
+ 57%|████████████████████████████████████████████████████████████████████▌                                                   | 4/7 [00:03<00:02,  1.13it/s]
+
+{'eval_loss': 4.547885417938232, 'eval_runtime': 7.0414, 'eval_samples_per_second': 6.959, 'eval_steps_per_second': 0.994, 'epoch': 0.35}
+
+  1%|▊                                                                                                                  | 7/1000 [01:34<3:51:44, 14.00s/it]
+
+ 57%|████████████████████████████████████████████████████████████████████▌                                                   | 4/7 [00:03<00:02,  1.12it/s]
+
+{'eval_loss': 4.54703950881958, 'eval_runtime': 7.0683, 'eval_samples_per_second': 6.932, 'eval_steps_per_second': 0.99, 'epoch': 0.41}
+
+  1%|▉                                                                                                                  | 8/1000 [01:48<3:52:41, 14.07s/it]
+
+ 57%|████████████████████████████████████████████████████████████████████▌                                                   | 4/7 [00:03<00:02,  1.12it/s]
+
+
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████▊                 | 6/7 [00:05<00:00,  1.10it/s]
+
+  1%|█                                                                                                                  | 9/1000 [02:02<3:51:56, 14.04s/it]
+  File "new_fine_falcon7b.py", line 237, in <module>████▍                                                                    | 3/7 [00:02<00:03,  1.21it/s]
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1883, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2208, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2951, in evaluate
+    output = eval_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3140, in evaluation_loop
+    loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3383, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2682, in compute_loss
+    outputs = model(**inputs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 553, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 541, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/peft/peft_model.py", line 827, in forward
+    return self.base_model(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 753, in forward
+    transformer_outputs = self.transformer(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 648, in forward
+    outputs = block(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 385, in forward
+    attn_outputs = self.self_attention(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 245, in forward
+    (query_layer, key_layer, value_layer) = self._split_heads(fused_qkv)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 205, in _split_heads
+    return fused_qkv[..., :-2, :], fused_qkv[..., [-2], :], fused_qkv[..., [-1], :]
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "new_fine_falcon7b.py", line 237, in <module>
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1883, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2208, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2951, in evaluate
+    output = eval_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3140, in evaluation_loop
+    loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3383, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2682, in compute_loss
+    outputs = model(**inputs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 553, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 541, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/peft/peft_model.py", line 827, in forward
+    return self.base_model(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 753, in forward
+    transformer_outputs = self.transformer(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 648, in forward
+    outputs = block(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 385, in forward
+    attn_outputs = self.self_attention(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 245, in forward
+    (query_layer, key_layer, value_layer) = self._split_heads(fused_qkv)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 205, in _split_heads
+    return fused_qkv[..., :-2, :], fused_qkv[..., [-2], :], fused_qkv[..., [-1], :]
+KeyboardInterrupt

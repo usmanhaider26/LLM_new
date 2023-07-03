@@ -1,0 +1,374 @@
+
+  0%|                                                                               | 0/1000 [00:00<?, ?it/s]You're using a PreTrainedTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+  0%|                                                                     | 1/1000 [00:11<3:08:41, 11.33s/it]
+{'loss': 4.5687, 'learning_rate': 4.0000000000000003e-07, 'epoch': 0.0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  File "new_fine_falcon7b.py", line 236, in <module>                       | 293/612 [09:34<09:22,  1.76s/it]
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1883, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2208, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2951, in evaluate
+    output = eval_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3140, in evaluation_loop
+    loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3383, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2682, in compute_loss
+    outputs = model(**inputs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 553, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 541, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/peft/peft_model.py", line 827, in forward
+    return self.base_model(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 753, in forward
+    transformer_outputs = self.transformer(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 648, in forward
+    outputs = block(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 385, in forward
+    attn_outputs = self.self_attention(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 287, in forward
+    output_tensor = self.dense(attn_output)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/nn/modules.py", line 219, in forward
+    out = bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/autograd/_functions.py", line 567, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/autograd/_functions.py", line 515, in forward
+    output = torch.nn.functional.linear(A, F.dequantize_fp4(B, state).to(A.dtype).t(), bias)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/functional.py", line 795, in dequantize_fp4
+    return dequantize_4bit(A, quant_state, absmax, out, blocksize, 'fp4')
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/functional.py", line 846, in dequantize_4bit
+    out = torch.empty(shape, dtype=dtype, device=A.device)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "new_fine_falcon7b.py", line 236, in <module>
+    trainer.train()
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1539, in train
+    return inner_training_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 1883, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, model, trial, epoch, ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2208, in _maybe_log_save_evaluate
+    metrics = self.evaluate(ignore_keys=ignore_keys_for_eval)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2951, in evaluate
+    output = eval_loop(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3140, in evaluation_loop
+    loss, logits, labels = self.prediction_step(model, inputs, prediction_loss_only, ignore_keys=ignore_keys)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 3383, in prediction_step
+    loss, outputs = self.compute_loss(model, inputs, return_outputs=True)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/transformers/trainer.py", line 2682, in compute_loss
+    outputs = model(**inputs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 553, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/utils/operations.py", line 541, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/amp/autocast_mode.py", line 14, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/peft/peft_model.py", line 827, in forward
+    return self.base_model(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 753, in forward
+    transformer_outputs = self.transformer(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 648, in forward
+    outputs = block(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 385, in forward
+    attn_outputs = self.self_attention(
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.cache/huggingface/modules/transformers_modules/tiiuae/falcon-7b-instruct/c7f670a03d987254220f343c6b026ea0c5147185/modelling_RW.py", line 287, in forward
+    output_tensor = self.dense(attn_output)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/accelerate/hooks.py", line 165, in new_forward
+    output = old_forward(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/nn/modules.py", line 219, in forward
+    out = bnb.matmul_4bit(x, self.weight.t(), bias=bias, quant_state=self.weight.quant_state)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/autograd/_functions.py", line 567, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/autograd/_functions.py", line 515, in forward
+    output = torch.nn.functional.linear(A, F.dequantize_fp4(B, state).to(A.dtype).t(), bias)
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/functional.py", line 795, in dequantize_fp4
+    return dequantize_4bit(A, quant_state, absmax, out, blocksize, 'fp4')
+  File "/home/ubuntu/.local/lib/python3.8/site-packages/bitsandbytes/functional.py", line 846, in dequantize_4bit
+    out = torch.empty(shape, dtype=dtype, device=A.device)
+KeyboardInterrupt

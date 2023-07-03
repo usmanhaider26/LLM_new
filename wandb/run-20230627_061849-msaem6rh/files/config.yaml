@@ -1,0 +1,57 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 2.0e-05
+architecture:
+  desc: null
+  value: Falcon7b
+dataset:
+  desc: null
+  value: Custom data with instance
+steps:
+  desc: null
+  value: 100
+r:
+  desc: null
+  value: 32
+lora_alpha:
+  desc: null
+  value: 64
+_wandb:
+  desc: null
+  value:
+    python_version: 3.8.10
+    cli_version: 0.15.0
+    framework: huggingface
+    huggingface_version: 4.31.0.dev0
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1687846729.059186
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      2:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      3:
+      - 16
+      - 23
+      4: 3.8.10
+      5: 0.15.0
+      6: 4.31.0.dev0
+      8:
+      - 5
